@@ -1,0 +1,27 @@
+#Operations on Matrices using numpy and linalg
+import numpy as rg
+A=rg.array([[1,-2j],[2j,5]])
+B=rg.array([[1,-2],[2,5]])
+print "Matrix A is: \n",A
+print "Matrix B is: \n",B
+print "Cholesky decomposition of Matrix A is \n ",rg.linalg.cholesky(A)
+print "Matrix B raised to the power of 2 is \n ",rg.linalg.matrix_power(B,2)
+print "Condition number of matrix B is \n",rg.linalg.cond(B,1)
+print "Determinant of Matrix B is \n",rg.linalg.det(B)
+print "Sum of Matrix A and Matrix B is \n ",rg.add(A,B)
+print "Subtraction of Matrix B from Matrix A is \n ",rg.subtract(A,B)
+print "Division of Matrix A by Matrix B is \n ",rg.divide(A,B)
+print "Multiplication of Matrix A and Matrix B by element wise is \n ",rg.multiply(A,B)
+print "Multiplication of Matrix A and Matrix B is \n ",rg.dot(A,B)
+print "Sqrt of Matrix B is  \n",rg.sqrt(B)
+print "Transpose of Matrix B is \n",B.transpose()
+print "Eigen vectors of Matrix B is \n",rg.linalg.eig(B)
+print "Eigen Vectors of Hermition Matrix A is \n",rg.linalg.eigh(A)
+print "Eigen values of Matrix B is \n",rg.linalg.eigvals(B)
+print "EigenValues of Hermition Matrix A is \n",rg.linalg.eigvalsh(A)
+print "Inverse of Matrix B is \n",rg.linalg.inv(B)
+print "Rank of Matrix B is ",rg.linalg.matrix_rank(B)
+print "Dot product of Matrix A, B is ",rg.linalg.multi_dot(B)
+print "Qr decomposition of Matrix B is \n",rg.linalg.qr(B)
+print "Sign and (natural) logarithm of the determinant of an Matrix B is: \n",rg.linalg.slogdet(B)
+print "Solving Matix A and Matrx B is: \n",rg.linalg.solve(A,B)
